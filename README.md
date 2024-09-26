@@ -1,24 +1,23 @@
 Tugas Pekan 3 - Oryza Kusuma Dewi
 
-HOW TO CLONE AND RUNNING THE CODE:
+Link recording
+https://drive.google.com/file/d/1y7_ERsQ1Lzd3Sg-7xaYtYWNdSRWU5Ajv/view?usp=sharing
 
-1. **Open Terminal or CMD**
+HOW TO RUNNING THE AUTOMATION TEST CODE IN ORDER BY FILE:
    
-2. **Navigasikan ke direktori penyimpanan dimana nanti ingin clone repositorinya menggunakan command dibawah**
-   
-   ```bash
-   cd Documents
-   
-3. **Lalu clone repository nya menggunakan command dibawah**
+1. **Jalankan test dengan perintah dibawah ini, tanpa perlu mengganti direktori nya**
    
    ```bash
-   git clone https://github.com/oryzaKD/tugasPekan2.git
-   
-4. **Setelah proses clone selesai, buka VSCode lalu buka folder dimana repository tadi disimpan**
-   
-5. **Lalu buka file js yang ingin di running**
-   
-6. **Running File .js menggunakan command dibawah**
+   npm test
+
+HOW TO RUNNING THE AUTOMATION TEST BASE ON FILE:
+
+1. **Masuk ke dalam folder test terlebih dahulu dengan menjalankan perintah dibawah ini**
    
    ```bash
-   node <nama-file>
+   cd .\test\
+   
+3. **Lalu jalankan perintah dibawah ini untuk memilih file mana yang mau di lakukan testing, semisal file api2.spec.js**
+   
+   ```bash
+   npx mocha .\api2.spec.js 
